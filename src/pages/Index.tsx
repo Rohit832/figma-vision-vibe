@@ -1,13 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import Hero from '@/components/Hero';
+import BackgroundImages from '@/components/BackgroundImages';
+import ContentImages from '@/components/ContentImages';
+import BottomSection from '@/components/BottomSection';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="max-w-[1422px] relative w-full h-[1015px] overflow-hidden mx-auto my-0 max-md:max-w-[991px] max-md:h-auto max-md:p-5 max-sm:max-w-screen-sm">
+      <BackgroundImages />
+      <Hero />
+      <ContentImages />
+      <BottomSection />
+    </main>
   );
 };
 
